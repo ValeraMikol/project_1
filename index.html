@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box" id="box"></div>
-		<button>1</button>
-		<button>2</button>
-		<button>3</button>
-		<button>4</button>
-		<button>5</button>
+    <div class="wrapper">
+        <div class="first">
+            <button></button>
+            <button id="current"></button>
+            <button></button>
+        </div>
+        <div class="second">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li data-current="3">3</li>
 
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <div class="third"></div>
+    </div>
 
-		<div class="wrapper">
-			<div class="heart"></div>
-			<div class="heart"></div>
-            <div class="heart"></div>
-            
-		</div>
-    <script src="/movesDOM.js"></script>
+    <script src="navigateDOM.js"></script>
 </body>
 </html>
